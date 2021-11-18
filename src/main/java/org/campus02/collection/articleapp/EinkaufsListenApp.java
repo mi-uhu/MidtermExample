@@ -29,10 +29,7 @@ public class EinkaufsListenApp {
     }
 
     public static HashSet<Einkauf> unique(ArrayList<Einkauf> einkaufsliste) {
-        HashSet<Einkauf> set = new HashSet<>();
-        set.addAll(einkaufsliste);
-        // addAll kann anstatt einer Schleife und Einzelaufrufen von add() verwendet werden
-        return set;
+        return new HashSet<>( einkaufsliste );
     }
 
     public static double sum(HashSet<Einkauf> set){
